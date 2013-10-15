@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/details_actor_marginLeft"
+        android:layout_marginRight="@dimen/details_arrow_marginRight">
+        
+        <TextView android:id="@+id/details_main_leftTop_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/details_more_textSize"
+            android:tag="black"/>
+        
+        <TextView android:id="@+id/details_main_leftBottom_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/details_subContent_textColor"
+            android:textSize="@dimen/details_more_textSize"
+            android:layout_marginTop="3dp"
+            android:tag="gray"
+            android:visibility="gone"/>
+        
+    </LinearLayout>
+    
+    <ImageView
+           android:id="@+id/details_main_item_arrow"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/details_arrow_marginLeft"
+           android:layout_marginRight="@dimen/details_arrow_marginRight"
+           android:src="@drawable/arrow_icon" />
+    
+    <TextView android:id="@+id/details_main_right_textView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:maxWidth="200dp"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/details_main_item_arrow"
+        android:textSize="@dimen/details_more_textSize"
+        android:tag="black_sec"/>
+    
+    <View android:id="@+id/details_main_item_line"
+        android:layout_height="@dimen/line_heigh"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_color"/>
+
+</RelativeLayout>

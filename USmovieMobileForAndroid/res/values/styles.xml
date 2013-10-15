@@ -1,0 +1,117 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    <style name="title" parent="android:Theme">
+        <item name="android:windowTitleSize">@dimen/title_heigh</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+  <!--   <style name="myTheme" parent="@android:style/Theme">
+        <item name="@android:windowAnimationStyle">@style/PopupAnimation</item>
+     </style> -->
+     
+     <!-- TAB样式 -->
+   <style name="TabButton">
+        <item name="android:textAppearance">@style/tab_item_text_style</item> 
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_select_bg_style</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+         <style name="tab_item_text_style">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@drawable/tab_text_style</item>
+        <item name="android:ellipsize">marquee</item>       
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 菜单 -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    
+    <!-- <style name="SearchPopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_r2l</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_l2r</item>
+    </style> -->
+
+    <!-- 跳转对话框样式 -->
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+     <!-- 文字阴影 【黑色投影，向上1px,透明度90％】 -->
+      <style name="shadow_black_up1_style">
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-1</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:background">@null</item>
+		</style>
+		 <!-- 文字阴影 【黑色投影，向上2px】 -->
+        <style name="shadow_black_up2_style">
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-2</item>
+		<item name="android:shadowRadius">2</item>
+		<item name="android:background">@null</item>
+		</style>
+		
+         <!-- 文字阴影 【黑色投影，向下2px】 -->
+        <style name="shadow_black_down2_style">
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">2</item>
+		<item name="android:shadowRadius">2</item>
+		<item name="android:background">@null</item>
+		</style>
+		
+         <!-- 文字阴影 【黑色投影，向下1px】 -->
+        <style name="shadow_black_down1_style">
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:background">@null</item>
+		</style>
+		
+       <!-- 文字阴影 【白色投影，向下1px】 -->
+      <style name="shadow_white_down1_style">
+		<item name="android:shadowColor">#FFFFFF</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:background">@null</item>
+		</style>
+		
+       <!-- 文字阴影 【白色投影，向下2px】 -->
+      <style name="shadow_white_down2_style">
+		<item name="android:shadowColor">#FFFFFF</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">2</item>
+		<item name="android:shadowRadius">2</item>
+		<item name="android:background">@null</item>
+		</style>
+</resources>

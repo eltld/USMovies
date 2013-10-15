@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" 
+    android:layout_marginLeft="@dimen/details_picec_marginLeft"
+    android:layout_marginRight="@dimen/details_picec_marginRight"
+    android:layout_marginTop="@dimen/details_picec_marginTop"
+    android:orientation="vertical"
+    android:visibility="gone" 
+    android:id="@+id/details_main">
+
+    <LinearLayout
+        android:id="@+id/details_main_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/movie_piece_top_bg">
+
+        <ImageView
+            android:id="@+id/details_main_image"
+            android:layout_width="@dimen/details_main_img_width"
+            android:layout_height="@dimen/details_main_img_height"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/img_bg">
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/details_main_title_relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/details_main_cn_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/details_main_title_textSize"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/details_main_en_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_cn_title"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/details_subTitle_textSize"
+                android:textStyle="bold"
+                android:tag="black"/>
+
+             <!-- 上映时间 -->
+            <LinearLayout
+                android:id="@+id/details_main_playTime_LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_en_title"
+                android:layout_marginTop="13dp" >
+
+                <TextView android:id="@+id/details_main_playTime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="上映时间："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="black"/>
+
+                <TextView
+                    android:id="@+id/details_main_playTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/details_subContent_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"/>
+
+            </LinearLayout>
+            
+            <!-- 单集片长 -->
+            <LinearLayout
+                android:id="@+id/details_main_singleTime_LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_playTime_LinearLayout"
+                android:layout_marginTop="1dp" >
+
+                <TextView android:id="@+id/details_main_singleTime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="片长："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="black"/>
+
+                <TextView
+                    android:id="@+id/details_main_singleTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/details_subContent_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="gray" />
+
+                <TextView
+                    android:id="@+id/details_main_state_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="地区："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="black"/>
+
+                <TextView
+                    android:id="@+id/details_main_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/details_subContent_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="gray"/>
+            </LinearLayout>
+
+            <!-- 类型 -->
+            <LinearLayout
+                android:id="@+id/details_main_class_LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_singleTime_LinearLayout"
+                android:layout_marginTop="1dp" >
+
+                <TextView android:id="@+id/details_main_class_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="类型："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="black"/>
+
+                <TextView
+                    android:id="@+id/details_main_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/details_subContent_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+            
+            <!-- 评分 -->
+            <LinearLayout
+                android:id="@+id/details_main_grade_LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_class_LinearLayout"
+                android:layout_marginTop="1dp" >
+
+                <TextView android:id="@+id/details_main_grade_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="评分："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"
+                    android:tag="black"/>
+
+                <TextView
+                    android:id="@+id/details_main_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/details_main_grade_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:typeface="serif" />
+
+                <TextView android:id="@+id/details_main_grade_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="/mtime"
+                    android:textColor="@color/details_subContent_textColor"
+                    android:textSize="@dimen/details_subContent_textSize" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/details_main_intro_RelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_grade_LinearLayout"
+                android:duplicateParentState="false"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="1dp">
+
+                <ImageView
+                    android:id="@+id/details_main_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/details_arrow_marginLeft"
+                    android:layout_marginRight="@dimen/details_arrow_marginRight"
+                    android:src="@drawable/arrow_icon" />
+                
+                <com.pps.usmovie.mobile.widget.EllipsizingTextView
+               		android:id="@+id/details_main_intro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/details_main_arrow"
+                    android:textColor="@color/details_subContent_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:maxLines="4"
+                    android:tag="gray" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+	<View android:layout_width="match_parent" 
+	        android:layout_height="@dimen/line_heigh"
+	        android:layout_marginLeft="2dp"
+	        android:layout_marginRight="2dp"
+	        android:background="@color/line_color"/>
+  
+    <!-- 详细资料 -->
+    
+    <RelativeLayout
+           android:id="@+id/details_main_more"
+           android:layout_width="fill_parent"
+           android:layout_height="45dp"
+           android:background="@drawable/movie_piece_top_bg">
+           
+           <TextView android:id="@+id/details_main_more_text"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:text="详细资料"
+               android:textColor="@color/black"
+               android:textSize="@dimen/details_more_textSize"
+               android:layout_marginLeft="@dimen/details_more_text_marginLeft"
+               android:tag="black"
+			   android:layout_centerVertical="true"/>
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/details_more_img_marginRight"
+               android:src="@drawable/more_icon"/>
+           
+       </RelativeLayout>
+       
+    <View android:layout_width="match_parent" 
+	        android:layout_height="@dimen/line_heigh"
+	        android:layout_marginLeft="2dp"
+	        android:layout_marginRight="2dp"
+	        android:background="@color/line_color"/>
+    
+         <!-- 相关图片 -->
+    <RelativeLayout
+        android:id="@+id/details_pic_RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/piece_selected_style" 
+        android:visibility="gone" >
+
+         <ImageView android:id="@+id/details_main_pic_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/details_arrow_marginRight"
+            android:src="@drawable/arrow_icon" />
+         
+        <LinearLayout
+            android:id="@+id/details_pic_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/details_main_pic_arrow"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true" >
+        </LinearLayout>
+
+       
+    </RelativeLayout>
+    
+</LinearLayout>

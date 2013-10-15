@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_heigh"
+    android:background="@drawable/title_bg"
+    android:orientation="horizontal"
+    android:id="@+id/common_title_RelativeLayout" >
+
+    <Button
+        android:id="@+id/title_left_btn"
+        style="@style/shadow_black_up2_style"
+        android:layout_width="@dimen/title_backBtn_width"
+        android:layout_height="@dimen/title_backBtn_heigh"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/btn_title_menu_marginRight"
+        android:background="@drawable/title_back_btn_style"
+        android:shadowRadius="3.0"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_btn_textSize"
+        android:visibility="gone" >
+    </Button>
+    
+    <ImageButton
+        android:id="@+id/title_left_img_btn"
+        android:background="@null"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/title_rightBtn_heigh"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:minWidth="@dimen/title_right_btn_minWidth"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_btn_textSize"
+        android:visibility="gone" >
+    </ImageButton>
+      <TextView
+        android:id="@+id/title_textview"
+        style="@style/shadow_black_up2_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_textSize"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/title_right_btn"
+        style="@style/shadow_black_up2_style"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_rightBtn_heigh"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_right_btn_style"
+        android:gravity="center"
+        android:minWidth="@dimen/title_right_btn_minWidth"
+        android:shadowRadius="3.0"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_btn_textSize"
+        android:visibility="invisible" >
+    </Button>
+
+    <ImageButton
+        android:id="@+id/title_right_img_btn"
+        style="@style/shadow_black_up2_style"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/title_rightBtn_heigh"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minWidth="@dimen/title_right_btn_minWidth"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_btn_textSize"
+        android:visibility="gone"/>
+    
+    <ProgressBar
+        android:id="@+id/title_right_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+    </ProgressBar>
+ </RelativeLayout>

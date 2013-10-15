@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginTop="20dp"
+    android:paddingTop="20dp">
+    
+     <TextView android:id="@+id/details_genre_piece_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/details_title_textColor"
+        android:layout_marginLeft="@dimen/details_headline_marginLeft"
+        android:layout_marginBottom="@dimen/details_title_picec_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/details_main_title_textSize"
+        android:visibility="gone"
+        style="@style/shadow_white_down1_style"/>
+     
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/details_picec_marginLeft"
+        android:layout_marginRight="@dimen/details_picec_marginRight"
+        android:background="@drawable/movie_piece_bg"
+        android:orientation="horizontal">
+        
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="80dp"
+            android:layout_weight="4">
+            
+            <TextView android:id="@+id/details_genre_title"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/details_more_textSize"
+                android:layout_centerInParent="true"
+                android:text="类型"/>
+            
+            <View android:layout_width="2dp" 
+                android:layout_height="fill_parent"
+                android:background="@color/line_color"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout> 
+         
+       <LinearLayout android:id="@+id/details_genre_piece_container"
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"
+           android:layout_weight="1"
+           android:orientation="vertical"></LinearLayout>
+        
+</LinearLayout>
+</LinearLayout>

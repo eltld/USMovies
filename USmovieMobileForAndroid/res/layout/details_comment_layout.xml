@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:minHeight="81dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/details_comment_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/details_arrow_marginLeft"
+            android:layout_marginRight="@dimen/details_arrow_marginRight"
+            android:src="@drawable/arrow_icon" />
+
+        <TextView
+            android:id="@+id/details_comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/details_comment_arrow"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:tag="black"
+            android:textColor="@color/details_title_textColor"
+            android:textSize="@dimen/details_more_textSize" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/details_comment_come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_comment_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/details_comment_arrow"
+            android:gravity="center_vertical"
+            android:tag="gray"
+            android:textColor="@color/details_subContent_textColor"
+            android:textSize="@dimen/details_subContent_textSize"
+            android:visibility="gone" />
+
+        <View android:id="@+id/details_comment_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_heigh"
+            android:layout_marginLeft="@dimen/details_actor_linemarginLeft"
+            android:layout_marginRight="@dimen/details_actor_linemarginRight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+</LinearLayout>

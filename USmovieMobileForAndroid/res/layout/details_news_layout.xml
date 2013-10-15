@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/details_news_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/details_news_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/details_arrow_marginLeft"
+            android:layout_marginRight="@dimen/details_arrow_marginRight"
+            android:src="@drawable/arrow_icon" />
+
+        <TextView
+            android:id="@+id/details_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/details_actor_marginTop"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="@dimen/details_actor_marginBottom"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/details_news_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:tag="black"
+            android:textColor="@color/details_title_textColor"
+            android:textSize="@dimen/details_more_textSize"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/details_news_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_heigh"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/details_actor_linemarginLeft"
+            android:layout_marginRight="@dimen/details_actor_linemarginRight"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+</LinearLayout>

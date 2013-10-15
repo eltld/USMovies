@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_title_layout" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/main_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="59dp"
+                android:layout_gravity="top"
+                android:background="@drawable/personal_title_bg"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="2dp" >
+
+                <RadioButton
+                    android:id="@+id/main_tab_history"
+                    style="@style/TabButton"
+                    android:checked="true"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tab_history_style"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="3dip"
+                    android:text="播放历史"
+                    android:textColor="@drawable/tab_text_style" />
+
+                <View
+                    android:layout_width="@dimen/details_line_height"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_line_icon" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_collection"
+                    style="@style/TabButton"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tab_collection_style"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="3dip"
+                    android:text="我的收藏"
+                    android:textColor="@drawable/tab_text_style" />
+            </RadioGroup>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</TabHost>

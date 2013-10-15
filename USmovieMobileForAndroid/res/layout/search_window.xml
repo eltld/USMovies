@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/details_bg_color" >
+    <include layout="@layout/common_title_layout"/>
+     <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/movie_tab_bg"
+            android:layout_marginTop="-2dp">
+
+            <Button android:id="@+id/search_btn"
+	        android:layout_height="40dp"
+	        android:layout_width="50dp"
+	        android:text="搜索"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:paddingRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp"></Button>
+         
+            <EditText
+                android:id="@+id/search_EditText"
+                android:layout_width="fill_parent"
+                android:layout_height="31dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/search_bg" 
+                android:layout_toLeftOf="@+id/search_btn"
+                android:paddingLeft="25dp"
+                android:hint="您需要的剧集名称"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/search_EditText"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/search_icon" />
+        </RelativeLayout>
+        
+     <ListView android:id="@+id/search_listView"
+         android:layout_height="fill_parent"
+         android:layout_width="fill_parent"
+         android:cacheColorHint="@android:color/transparent"
+         android:divider="#D3D3D3"
+         android:dividerHeight="1px"
+         android:layout_weight="1" 
+         android:fadingEdge="none"></ListView>
+     
+     <TextView android:id="@+id/search_hint"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="没有找到您需要的相关资讯……"
+         style="@style/shadow_white_down1_style"
+         android:visibility="gone"
+         android:layout_marginTop="200dp"/>
+
+</LinearLayout>

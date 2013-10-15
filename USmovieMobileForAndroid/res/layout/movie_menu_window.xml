@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/menu_bg_color" >
+    
+	<LinearLayout 
+	    android:id="@+id/menu_home_LinearLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/menu_item_height"
+	    android:orientation="horizontal">
+	    
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="@dimen/menu_marginLeft"
+	        android:src="@drawable/menu_home_icon"/>
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="13dp"
+	        android:text="首页"
+	        android:textColor="@color/menu_home_textColor"
+	        android:textSize="17sp"
+	        android:textStyle="bold"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="26dp"
+	    android:background="@drawable/menu_title_bg"
+	    android:gravity="center_vertical">
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:text="不知道看什么？"
+	        android:textColor="#6D6D6D"
+	        android:textStyle="bold"
+	        android:layout_marginLeft="@dimen/menu_marginLeft"
+	        android:textSize="13sp"
+	        style="@style/shadow_black_up1_style"/>
+	    
+	</LinearLayout>
+	
+	<ListView android:id="@+id/menu_listview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:cacheColorHint="@android:color/transparent"
+	    android:divider="#292929"
+	    android:dividerHeight="1px"
+	    android:background="@color/menu_bg_color"
+	    android:scrollbars="none"/>
+    
+    
+</LinearLayout>

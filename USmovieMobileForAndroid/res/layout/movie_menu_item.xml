@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_item_height"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:background="@drawable/listview_item_selected_style">
+
+    <TextView
+        android:id="@+id/menu_listview_item_text"
+        style="@style/shadow_black_up1_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@drawable/menu_textcolor_style"
+        android:textSize="15sp"
+        android:textStyle="bold"
+     	android:paddingTop="8dp"
+     	android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/menu_marginLeft">
+    </TextView>
+
+</LinearLayout>

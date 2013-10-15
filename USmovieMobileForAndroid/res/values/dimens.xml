@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name = "line_heigh">1dp</dimen>
+     <!-- 标题 -->
+    <dimen name = "title_heigh">45dip</dimen>
+	<dimen name = "title_backBtn_heigh">45dip</dimen>
+	<dimen name = "title_backBtn_width">80.7dip</dimen>
+	<dimen name = "title_rightBtn_width">80dp</dimen>
+	<dimen name = "title_rightBtn_heigh">45dip</dimen>
+    <dimen name = "title_btn_textSize">13dip</dimen>
+    <dimen name = "title_right_btn_minWidth">51.3dp</dimen>
+    <dimen name = "title_right_btn_paddingLeft">10dp</dimen>
+    <dimen name = "title_right_btn_paddingRight">10dp</dimen>
+    <dimen name = "btn_title_menu_marginRight">7dip</dimen>
+	<dimen name = "btn_title_menu_marginLeft">10dip</dimen>
+	<dimen name = "title_textSize">20sp</dimen>
+	
+	<!-- 首页内容页 -->
+	<dimen name = "video_content_tab_height">42dip</dimen>
+	<dimen name = "tab_text_size">9sp</dimen>
+	<dimen name = "video_content_image_height">96dp</dimen>
+	<dimen name = "video_content_image_width">66dp</dimen>
+	<dimen name = "video_content_image_marginLeft">10dp</dimen>
+	<dimen name = "video_content_image_marginTop">6dp</dimen>
+	<dimen name = "video_content_image_marginBottom">6dp</dimen>
+	<dimen name = "video_content_image_marginRight">16dp</dimen>
+	<dimen name = "arrow_marginRight">17dp</dimen>
+	<dimen name = "arrow_marginLeft">10dp</dimen>
+	<dimen name = "video_content_cn_title_textSize">16sp</dimen>
+	<dimen name = "video_content_e_title_textSize">14sp</dimen>
+	<dimen name = "video_content_explan_title_textSize">13sp</dimen>
+	
+	<!-- 侧边栏 -->
+	<dimen name = "menu_marginLeft">15dip</dimen>
+	<dimen name = "menu_item_height">45dip</dimen>
+	
+	<!-- 详情界面 -->
+	<dimen name = "details_main_img_height">112dip</dimen>
+	<dimen name = "details_main_img_width">80dip</dimen>
+	<dimen name = "details_picec_marginLeft">10dp</dimen>
+	<dimen name = "details_picec_marginRight">10dp</dimen>
+	<dimen name = "details_picec_marginTop">12dp</dimen>
+	<dimen name = "details_arrow_marginRight">8dp</dimen>
+	<dimen name = "details_arrow_marginLeft">3dp</dimen>
+	
+	<dimen name = "details_main_title_textSize">18sp</dimen><!-- 标题字体大小   “影片名称，板块名称” -->
+	<dimen name = "details_content_textSize">16sp</dimen>
+	<dimen name = "details_subTitle_textSize">14sp</dimen>
+	<dimen name = "details_subContent_textSize">13sp</dimen><!-- 副内容字体大小    “简介” -->
+	<dimen name = "details_more_text_marginTop">10dp</dimen>
+	<dimen name = "details_more_text_marginBottom">10dp</dimen>
+	<dimen name = "details_more_text_marginLeft">12dp</dimen>
+	<dimen name = "details_more_img_marginRight">15dp</dimen>
+	<dimen name = "details_more_textSize">16sp</dimen>
+	
+	<dimen name = "details_headline_marginLeft">12dp</dimen>
+	<dimen name = "details_headline_marginRight">12dp</dimen>
+	<dimen name = "details_title_picec_margin">5dp</dimen>
+	
+	<dimen name = "details_actor_image_height">88dp</dimen>
+	<dimen name = "details_actor_image_width">64dp</dimen>
+	<dimen name = "details_actor_marginTop">5dp</dimen>
+	<dimen name = "details_actor_marginBottom">5dp</dimen>
+	<dimen name = "details_actor_marginLeft">8dp</dimen>
+	<dimen name = "details_actor_marginRight">10dp</dimen>
+	
+	<dimen name = "details_actor_linemarginLeft">2dp</dimen>
+	<dimen name = "details_actor_linemarginRight">2dp</dimen>
+	
+	<dimen name = "details_founder_marginTop">10dp</dimen>
+	<dimen name = "details_founder_marginBottom">10dp</dimen>
+	<dimen name = "details_founder_marginLeft">20dp</dimen>
+	<dimen name = "details_founder_marginRight">20dp</dimen>
+	
+	<dimen name = "details_line_height">1dp</dimen>
+</resources>

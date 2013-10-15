@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginTop="20dp"
+    android:paddingTop="20dp" >
+    
+     <TextView android:id="@+id/details_piece_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/details_title_textColor"
+        android:layout_marginLeft="@dimen/details_headline_marginLeft"
+        android:layout_marginBottom="@dimen/details_title_picec_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/details_main_title_textSize"
+        android:visibility="gone"
+        style="@style/shadow_white_down2_style"/>
+     
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/details_picec_marginLeft"
+        android:layout_marginRight="@dimen/details_picec_marginRight"
+        android:orientation="vertical">
+        
+       <LinearLayout android:id="@+id/details_piece_container"
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"
+           android:orientation="vertical"></LinearLayout>
+        
+       <RelativeLayout android:id="@+id/details_piece_more"
+           android:layout_width="fill_parent"
+           android:layout_height="50dp"
+           android:gravity="center_vertical"
+           android:background="@drawable/movie_piece_bg"
+           android:visibility="gone">
+           
+           <TextView android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:text="更多"
+               android:textColor="@color/black"
+               android:textSize="@dimen/details_more_textSize"
+               android:layout_marginLeft="@dimen/details_more_text_marginLeft"
+               android:paddingBottom="8dp"
+			   android:layout_centerVertical="true"
+               android:tag="black"/>
+           
+           <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/details_more_img_marginRight"
+               android:src="@drawable/more_icon"/>
+           
+       </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

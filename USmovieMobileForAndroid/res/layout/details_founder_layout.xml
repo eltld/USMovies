@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+     <ImageView
+            android:id="@+id/details_founder_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/arrow_marginRight"
+            android:src="@drawable/arrow_icon" />
+    
+    <TextView android:id="@+id/details_founder_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/details_title_textColor"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/details_founder_marginTop"
+        android:layout_marginLeft="@dimen/details_founder_marginLeft"
+        android:layout_marginRight="@dimen/details_founder_marginRight"
+        android:tag="black"
+        android:visibility="gone"
+        android:textSize="@dimen/details_more_textSize"
+        android:layout_alignParentLeft="true"
+		android:layout_toLeftOf="@+id/details_founder_arrow"/>
+    
+     <TextView android:id="@+id/details_founder_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/details_subContent_textColor"
+        android:textSize="@dimen/details_subContent_textSize"
+        android:tag="gray"
+        android:layout_marginBottom="@dimen/details_founder_marginBottom"
+        android:layout_marginLeft="@dimen/details_founder_marginLeft"
+        android:layout_marginRight="@dimen/details_founder_marginRight"
+        android:layout_below="@+id/details_founder_title"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"/>
+     
+     <View android:id="@+id/details_founder_line"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/line_heigh"
+         android:background="@color/line_color"
+         android:layout_marginLeft="@dimen/details_actor_linemarginLeft"
+         android:layout_marginRight="@dimen/details_actor_linemarginRight"
+         android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

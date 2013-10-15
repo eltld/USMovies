@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:gravity="center"
+    android:id="@+id/loadmore_LinearLayout"
+    android:background="@android:color/transparent" >
+
+     <ProgressBar android:id="@+id/loadmore_ProgressBar"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:indeterminate="true"
+            android:visibility="visible" />
+     
+    <TextView
+        android:id="@+id/loadMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="正在加载" />
+
+</LinearLayout>

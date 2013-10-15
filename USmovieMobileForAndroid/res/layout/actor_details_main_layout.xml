@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" 
+    android:layout_marginLeft="@dimen/details_picec_marginLeft"
+    android:layout_marginRight="@dimen/details_picec_marginRight"
+    android:layout_marginTop="@dimen/details_picec_marginTop"
+    android:orientation="vertical"
+    android:visibility="gone" 
+    android:id="@+id/actor_details_main">
+
+    <LinearLayout
+        android:id="@+id/actor_details_main_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/movie_piece_top_bg">
+
+        <ImageView
+            android:id="@+id/actor_details_main_image"
+            android:layout_width="@dimen/details_main_img_width"
+            android:layout_height="@dimen/details_main_img_height"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/img_bg">
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/actor_details_main_title_relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/details_main_cn_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/details_main_title_textSize"
+                android:textStyle="bold"/>
+
+           
+            <TextView
+                android:id="@+id/details_main_en_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_main_cn_title"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/details_main_title_textSize"
+                android:textStyle="bold"
+                android:tag="black"/>
+
+              <!-- 英文全名 -->
+                <TextView
+                    android:id="@+id/actor_details_main_enName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@+id/details_main_en_title"
+                    android:textColor="@color/details_title_textColor"
+                    android:textSize="@dimen/details_subContent_textSize"/>
+
+            <!-- 备注-->
+                <TextView android:id="@+id/actor_details_main_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/actor_details_main_enName"
+                    android:layout_marginTop="1dp"
+                    android:textSize="@dimen/details_subContent_textSize"
+                    android:textStyle="bold"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+	<View android:layout_width="match_parent" 
+	        android:layout_height="@dimen/line_heigh"
+	        android:layout_marginLeft="2dp"
+	        android:layout_marginRight="2dp"
+	        android:background="@color/line_color"/>
+  
+    
+         <!-- 相关图片 -->
+    <RelativeLayout
+        android:id="@+id/actor_details_pic_RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/piece_selected_style" 
+        android:visibility="gone" >
+
+         <ImageView android:id="@+id/actor_details_main_pic_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/details_arrow_marginRight"
+            android:src="@drawable/arrow_icon" />
+         
+        <LinearLayout
+            android:id="@+id/actor_details_pic_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/actor_details_main_pic_arrow"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true" >
+        </LinearLayout>
+       
+    </RelativeLayout>
+    
+</LinearLayout>

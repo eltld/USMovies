@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/details_video_RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:layout_marginLeft="8dp" >
+
+        <ImageView
+            android:id="@+id/details_video_img"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix" />
+
+        <ImageView
+            android:id="@+id/details_video_play_view"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/video_play_icon" />
+
+        <ImageView
+            android:id="@+id/details_video_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/details_arrow_marginLeft"
+            android:layout_marginRight="@dimen/details_arrow_marginRight"
+            android:src="@drawable/arrow_icon" />
+
+        <TextView
+            android:id="@+id/details_video_explan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/details_actor_marginLeft"
+            android:layout_toLeftOf="@+id/details_video_arrow"
+            android:layout_toRightOf="@+id/details_video_img"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:tag="black"
+            android:textColor="@drawable/black_white_textcolor_style"
+            android:textSize="@dimen/details_more_textSize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/details_video_pic_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_heigh"
+        android:layout_marginLeft="@dimen/details_actor_linemarginLeft"
+        android:layout_marginRight="@dimen/details_actor_linemarginRight"
+        android:background="@color/line_color" />
+
+</LinearLayout>

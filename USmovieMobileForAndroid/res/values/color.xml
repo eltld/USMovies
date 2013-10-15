@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 通用 -->
+    <drawable name="gray">#FF888888</drawable>
+    <drawable name="blue">#FF0000FF</drawable>
+    <color name = "black">#000000</color>
+    <color name = "white">#FFFFFF</color>
+    <color name = "bg_color">#F2F2F2</color>
+    <color name="transparent">#00000000</color>
+    <!-- <color name = "selected_bg_color">#42dcb8</color> -->
+    <color name = "selected_bg_color">#F44E15</color>
+    <color name = "details_bg_color">#E6E6E6</color>
+    <color name = "line_color">#D3D3D3</color>
+     <!-- 标题 -->
+     <color name="title_text">#FFFFFF</color>
+     
+     <!-- 首页 -->
+    <color name="tab_bar_text_color">#A2A2A2</color>
+    
+     <!-- 侧边栏 -->
+     <color name = "menu_bg_color">#121212</color>
+     <color name = "menu_home_textColor">#F7F7F7</color>
+     <color name = "menu_item_textColor">#A9A9A9</color>
+     
+     <!-- 个人界面 -->
+     <color name = "personal_topBar_selected_textColor">#F44E15</color>
+     <color name = "personal_topBar_textColor">#8A8A8A</color>
+     
+     <color name = "personal_history_selected_textColor">#FFFFFF</color>
+     <color name = "personal_history_textColor">#232323</color>
+     
+     <color name = "personal_history_item_color">#F2F2F2</color>
+     
+     <!-- 详情界面 -->
+     <color name = "details_title_textColor">#000000</color>
+     <color name = "details_subContent_textColor">#5F5F5F</color>
+      <color name = "details_main_grade_textColor">#0090D2</color>
+     
+     
+</resources>
